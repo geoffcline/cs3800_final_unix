@@ -24,36 +24,36 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Documents\master\CS2500_proj1-master\Dynamic.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="KnapSack.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Documents\master\CS2500_proj1-master\Greedy.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="bruteforce.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Documents\master\CS2500_proj1-master\KnapSack.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="Dynamic.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Documents\master\CS2500_proj1-master\bruteforce.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="Greedy.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Documents\master\CS2500_proj1-master\Greedy.cpp">
+    <ClCompile Include="bruteforce.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Documents\master\CS2500_proj1-master\KnapSack.cpp">
+    <ClCompile Include="Dynamic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Documents\master\CS2500_proj1-master\bruteforce.cpp">
+    <ClCompile Include="Greedy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Documents\master\CS2500_proj1-master\Dynamic.cpp">
+    <ClCompile Include="KnapSack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Documents\master\CS2500_proj1-master\tester.cpp">
+    <ClCompile Include="tester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
