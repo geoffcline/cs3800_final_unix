@@ -10,13 +10,12 @@ int bruteforceKS(const KS_List& item, const int maxw)
   
   int n = item.getsize(); //used multiple times so variable for total amount of items
 
-
   int bestValue=0;     //keeps track of max value obtained by a combo of items
   int bestWeight=0;    //same as above except for weight
 
 	mutex geoff; 
 
-	concurrency::parallel_for(int(1), static_cast<int>(pow(2, n)), [&](int i)
+	concurrency::parallel_for(int(1), static_cast<int>(pow(2, n)), [&](const int i)
 	{
 		int currentV = 0;
 		int currentW = 0;
