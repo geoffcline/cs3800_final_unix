@@ -14,8 +14,6 @@ int DP_KNAPSACK(const KS_List& A, const int maxw)
 {
 
 //Variable to be used later
-	int currentW = 0;
-	int currentV = 0;
 	int sizeOfList = A.getsize();
 	int final = 0;
 	
@@ -35,13 +33,14 @@ int DP_KNAPSACK(const KS_List& A, const int maxw)
     }
   }
 
-	//Goes through the entire 2D array starting at row 1 to set the the max value
-	concurrency:parallel_for(int(1), static_cast<int>(sizeOfList), [&](const int i)
+	
+  //Goes through the entire 2D array starting at row 1 to set the the max value
+   concurrency::parallel_for(int(1), static_cast<int>(sizeOfList), [&](const int i)
 	{
 		for (int j = 0; j <= maxw; j++)
 		{
-      		currentW = A[i-1] -> getweight();
-      		currentV = A[i-1] -> getvalue();
+      		int currentW = A[i-1] -> getweight();
+      		int currentV = A[i-1] -> getvalue();
 			if ( (currentW <= j) && ( (currentV + sackValues[j-currentW][i-1].load()) > sackValues[j][i-1].load() ) )
 			{
         		sackValues[j][i].store(currentV + sackValues[j-currentW][i-1].load());

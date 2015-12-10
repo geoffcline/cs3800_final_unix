@@ -48,7 +48,7 @@ int main ()
   fout << "\"C/S\",\"" << CLOCKS_PER_SEC << "\"" << endl;
   
   KS_List BRUTEL_working(BRUTESIGMA, BRUTEMU, BRUTESIZE);
-  KS_List L_working(SIGMA,MU,SIZE);
+  KS_List L_working(static_cast<int>(SIGMA),static_cast<int>(MU),SIZE);
   
  //brute force tests/////////////////////////////////////////////////////////////////////////////
 
