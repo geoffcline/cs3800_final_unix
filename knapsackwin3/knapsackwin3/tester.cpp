@@ -25,8 +25,8 @@ int main ()
   const int   BRUTEMAXW = 1000;
   const int   BRUTEINITIALINPUTSIZE = 10;
   const int   BRUTEINPUTINCREMENT = 2;
-  const int   BRUTEMU = 10;
-  const int   BRUTESIGMA = 2;
+  const float   BRUTEMU = 10;
+  const float   BRUTESIGMA = 2;
   const int   BRUTESIZE  = 20;
   const int   BRUTESIGMAINCREMENT = 1;
   const int   BRUTEINITIALSIGMA = 1;
